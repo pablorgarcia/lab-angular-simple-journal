@@ -12,7 +12,7 @@ export class EntryListComponent implements OnInit {
 
   entries: Array<string>;
 
-  constructor( private entry: JournalServiceService) { }
+  constructor( private entry: JournalServiceService ) { }
 
   ngOnInit() {
     this.entry.getList().subscribe(

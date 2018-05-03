@@ -4,4 +4,5 @@
 
 <div *ngFor="let entry of entries">
   <p>{{entry.title}}</p>
+  <a [routerLink]="['journal-entries', entry._id]">leer más {{entry._id}}</a>
 </div>

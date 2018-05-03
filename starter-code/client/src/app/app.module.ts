@@ -5,18 +5,25 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list/entry-list.component';
+import { SingleEntryComponent } from './single-entry/single-entry.component';
+
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryListComponent
+    EntryListComponent,
+    SingleEntryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
